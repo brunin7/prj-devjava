@@ -1,0 +1,34 @@
+<head>
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+  <div id="main-container">
+    <h1>Cadastro de cliente</h1>
+    <form id="register-form" action="">
+      <div class="full-box">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Digite o e-mail" data-min-length="2" data-email-validate>
+      </div>
+      <div class="half-box spacing">
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+      </div>
+      <div class="half-box">
+          <label for="lastname">Sobrenome</label>
+          <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome" data-required data-only-letters>
+      </div>
+      <div class="half-box spacing">
+        <label for="text">CPF</label>
+        <input type="text" name="text" id="text" placeholder="Digite seu CPF" data-password-validate data-required>
+      </div>
+      <div class="half-box">
+        <label for="passconfirmation">Carro escolhido</label>
+        <input type="text" name="text" id="text" placeholder="Digite o modelo" data-equal="password">
+      </div>
+      
+      <div class="full-box">
+        <input id="btn-submit" type="submit" value="Enviar">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
